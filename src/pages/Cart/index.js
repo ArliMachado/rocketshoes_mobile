@@ -1,8 +1,25 @@
-import React from 'react';
-import { View } from 'react-native';
+import React, { Component } from 'react';
 
-// import { Container } from './styles';
+import Header from '~/components/Header';
+import { Container, Texto } from './styles';
 
-export default function Cart() {
-  return <View />;
+class Cart extends Component {
+  handleNavigation = page => {
+    const { navigation } = this.props;
+    navigation.navigate(page);
+  };
+
+  render() {
+    return (
+      <Container>
+        <Header
+          onPressLogo={() => this.handleNavigation('Home')}
+          onPressBag={() => this.handleNavigation('Cart')}
+        />
+        <Texto>Carrinho</Texto>
+      </Container>
+    );
+  }
 }
+
+export default Cart;
