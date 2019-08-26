@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Header from '~/components/Header';
-import { Container, Texto } from './styles';
+import { Container } from './styles';
 
 class Cart extends Component {
   handleNavigation = page => {
@@ -16,7 +16,6 @@ class Cart extends Component {
           onPressLogo={() => this.handleNavigation('Home')}
           onPressBag={() => this.handleNavigation('Cart')}
         />
-        <Texto>Carrinho</Texto>
       </Container>
     );
   }

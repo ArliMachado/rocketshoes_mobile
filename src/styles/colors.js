@@ -6,5 +6,6 @@ export default {
   dark: '#666',
   darker: '#333',
   black: '#000',
-  violet: '#7159c1',
+  violet: '#5c2f7d',
+  darkViolet: '#381150',
 };
